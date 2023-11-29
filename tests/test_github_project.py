@@ -62,7 +62,7 @@ def test_move_project_card(
     expect(c_response).to_be_ok()
 
     # Log in via UI
-    page.goto(f'https://github.com/login')
+    page.goto('https://github.com/login')
     page.locator('id=login_field').fill(gh_username)
     page.locator('id=password').fill(gh_password)
     page.locator('input[name="commit"]').click()
